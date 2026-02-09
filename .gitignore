@@ -2,13 +2,13 @@
 wp-admin/
 wp-includes/
 wp-config.php
-index.php
 *.php
 .htaccess
 /node_modules/
 
 # PERMITIR el contenido personalizado
 !wp-content/
+!index.php
 
 # Ignorar logs y archivos temporales
 *.log
