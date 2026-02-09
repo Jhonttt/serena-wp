@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Just a moment…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: #f5f7fb;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            max-width: 420px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0 0 10px;
+            font-size: 22px;
+        }
+        p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #666;
+        }
+        .spinner {
+            margin: 25px auto;
+            width: 36px;
+            height: 36px;
+            border: 4px solid #ddd;
+            border-top-color: #3D4592;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .note {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Just a moment…</h1>
+        <p>We're getting things ready. Your site will load shortly.</p>
+        <div class="spinner"></div>
+        <p class="note">This page will refresh automatically.</p>
+    </div>
+</body>
+</html>
